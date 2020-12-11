@@ -17,8 +17,26 @@ hr {
     margin: 10px 0;
 }
 
+.container,
+#mainscreen {
+    background-color: #FFF5EE;
+}
+
 
 /* Navigation Bar */
+
+.navbar {
+    background-color: #008080 !important;
+}
+
+#dropdownMenuButton {
+    background-color: #008080;
+    border: none;
+}
+
+#dropdownMenuButton:focus {
+    box-shadow: none;
+}
 
 .navbar-brand {
     font-size: 2.2rem;
@@ -67,33 +85,36 @@ hr {
 /* Contact Section */
 
 #contact {
-    background-color: rgb(54, 0, 54);
+    background-color: #9c9692;
     text-align: center;
     padding-top: 3rem;
-    color: hsl(303, 56%, 61%);
+    color: black;
+}
+
+#contacts {
+    background-color: #9c9692;
 }
 
 .rahul {
-    height: 70%;
-    width: 60%;
-    margin: auto;
+    width: 28%;
+    margin: 1rem auto;
 }
 
 .vaibhavi {
-    width: 67%;
+    width: 35%;
     margin: 1rem auto;
 }
 
 .divya {
-    margin: auto;
-    width: 80%;
+    margin: 1rem auto;
+    width: 51%;
 }
 
 
 /* Footer */
 
 footer {
-    background-color: rgb(32, 1, 32);
+    background-color: #312d2b;
     color: white;
     font-weight: bold;
 }
@@ -101,14 +122,23 @@ footer {
 
 /* SignUp Page */
 
+.signing {
+    background-color: lightgrey;
+    padding-top: 15vh;
+}
+
 .sign-up {
     width: 50%;
     text-align: center;
 }
 
 .md-form {
-    background-color: rgb(236, 246, 245);
+    background-color: white;
     padding: 0.5rem 3rem;
+}
+
+#logo {
+    width: 80%;
 }
 
 .md-form p {
@@ -116,23 +146,24 @@ footer {
 }
 
 .md-form input {
-    background-color: rgb(236, 246, 245);
+    background-color: white;
     border: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0.493);
     border-radius: 0;
     outline: none;
+    margin: 1rem 0;
 }
 
 .md-form input:focus {
     border: none;
     box-shadow: none;
     outline: none;
-    background-color: rgb(236, 246, 245);
+    background-color: white;
     border-bottom: 2px solid rgba(0, 0, 0, 0.493);
 }
 
 .suform {
-    background-color: rgb(236, 246, 245);
+    background-color: white;
 }
 
 .signupheader {
@@ -156,7 +187,7 @@ footer {
 }
 
 .lbutton {
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 

@@ -15,28 +15,65 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand">Brand Name</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <div class="container">
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle btn-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Profile
+                    </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="signup">New User</a>
+                            <a class="dropdown-item" href="login">Login</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Journal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid signing">
         <div class="sign-up deck">
             <form action="/login" class="suform" method="post">
                 <div class="signupheader">
                     <h2>Login</h2>
 
                 </div>
-
-                <div class="md-form box">
-                    <label for="username"> Username</label>
-                    <input type="text" id="username" class="form-control" name="username" placeholder="Username" autocomplete="off">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="md-form box">
+                            <input type="text" id="username" class="form-control" name="username" placeholder="Username" autocomplete="off">
+                        </div>
+                        <div class="md-form box">
+                            <input type="password" id="password" class="form-control" name="password" placeholder="Password" autocomplete="off">
+                        </div>
+                        <button type="submit" class="btn btn-primary lbutton btn-lg">Login</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/logo.png" alt="" id="logo">
+                    </div>
                 </div>
-                <div class="md-form box">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" class="form-control" name="password" placeholder="Password" autocomplete="off">
-                </div>
-                <button type="submit" class="btn btn-primary lbutton">Login</button>
 
             </form>
         </div>
-
+        <footer>
+            <div class="footer-copyright text-center py-3 footer-primary">© 2020 Copyright: Hackslash </div>
+        </footer>
     </div>
 
 
