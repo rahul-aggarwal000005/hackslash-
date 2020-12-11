@@ -1,0 +1,277 @@
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+hr {
+    border-width: 0;
+    height: 2px;
+    background-color: black;
+}
+
+.content {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+/* Navigation Bar */
+
+.navbar-brand {
+    font-size: 2.2rem;
+}
+
+.navbar {
+    margin-bottom: 1.2rem;
+    padding: 0.1 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    font-size: 1.3rem;
+}
+
+.dropdown {
+    margin-top: 7px;
+}
+
+
+/* Body Content */
+
+.first {
+    margin-top: 10%;
+    opacity: 1.1;
+    height: 400px;
+    width: 600px;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgb(19, 19, 19);
+}
+
+.deck {
+    margin: 4.5rem auto;
+}
+
+
+/* Contact Section */
+
+#contact {
+    background-color: rgb(54, 0, 54);
+    text-align: center;
+    padding-top: 3rem;
+    color: hsl(303, 56%, 61%);
+}
+
+.rahul {
+    height: 70%;
+    width: 60%;
+    margin: auto;
+}
+
+.vaibhavi {
+    width: 67%;
+    margin: 1rem auto;
+}
+
+.divya {
+    margin: auto;
+    width: 80%;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(32, 1, 32);
+    color: white;
+    font-weight: bold;
+}
+
+
+/* SignUp Page */
+
+.sign-up {
+    width: 50%;
+    text-align: center;
+}
+
+.md-form {
+    background-color: rgb(236, 246, 245);
+    padding: 0.5rem 3rem;
+}
+
+.md-form p {
+    font-size: small;
+}
+
+.md-form input {
+    background-color: rgb(236, 246, 245);
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.493);
+    border-radius: 0;
+    outline: none;
+}
+
+.md-form input:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-color: rgb(236, 246, 245);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.493);
+}
+
+.suform {
+    background-color: rgb(236, 246, 245);
+}
+
+.signupheader {
+    background-color: rgb(47, 179, 255);
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.links,
+.tnc {
+    margin: 1rem 0;
+}
+
+.fab,
+.fas {
+    margin: 1rem;
+}
+
+.sbutton {
+    margin-bottom: 3rem;
+}
+
+.lbutton {
+    margin: 3rem 0;
+}
+
+
+/* Home Screen Of User */
+
+.search {
+    margin: 0 2vw;
+}
+
+.searchBox input {
+    padding: 0 0.5rem;
+}
+
+.map {
+    text-align: center;
+}
+
+.middle {
+    background-color: rgb(200, 169, 200);
+    margin: 12vh auto;
+    height: 100vh;
+}
+
+.leftBox {
+    padding: 3vh;
+    background-color: rgb(241, 241, 204);
+    height: 100%;
+    border-right: 10px solid black;
+    text-align: center;
+}
+
+.middleBox {
+    padding: 3vh;
+    background-color: rgb(176, 230, 176);
+    height: 100%;
+    text-align: center;
+}
+
+.rightBox {
+    padding: 3vh;
+    background-color: rgb(245, 176, 187);
+    height: 100%;
+    border-left: 10px solid black;
+}
+
+.addbooking {
+    background-color: teal;
+    color: white;
+    margin: 5% auto;
+    justify-content: center;
+    padding: 8vh 0;
+}
+
+.addTransport {
+    background-color: purple;
+    color: white;
+    margin: 5% auto;
+    justify-content: center;
+    padding: 8vh 0;
+}
+
+.postsection {
+    margin: auto auto 2rem auto;
+    width: 100%;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.postleft,
+.postright {
+    display: block;
+}
+
+.postleft img {
+    width: 50%;
+    float: right;
+}
+
+.postright img {
+    width: 50%;
+    float: right;
+}
+
+#addpost {
+    border-radius: 10px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+    .first {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width:991px) {
+    .leftBox {
+        height: 60vh;
+    }
+    .addbooking {
+        background-color: teal;
+        color: white;
+        margin: 2% auto;
+        justify-content: center;
+        padding: 2vh 0;
+    }
+    .addTransport {
+        background-color: purple;
+        color: white;
+        margin: 2% auto;
+        justify-content: center;
+        padding: 2vh 0;
+    }
+}
