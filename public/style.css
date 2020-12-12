@@ -26,12 +26,13 @@ hr {
 /* Navigation Bar */
 
 .navbar {
-    background-color: #008080 !important;
+    z-index: 1;
 }
 
 #dropdownMenuButton {
-    background-color: #008080;
+    background-color: rgba(0, 0, 0, 0.493);
     border: none;
+    font-size: 20px;
 }
 
 #dropdownMenuButton:focus {
@@ -44,11 +45,7 @@ hr {
 
 .navbar {
     margin-bottom: 1.2rem;
-    padding: 0.1 1rem;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+    padding: 0 1rem;
 }
 
 .nav-item {
@@ -66,48 +63,173 @@ hr {
 
 /* Body Content */
 
-.first {
-    margin-top: 10%;
-    opacity: 1.1;
-    height: 400px;
-    width: 600px;
+.first-section {
+    background-image: url("images/first1.gif");
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 660px;
 }
+
+.glow {
+    margin: 1rem 0;
+    font-size: 80px;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #ca590e, 0 0 15px #e66800, 0 0 20px #e68200, 0 0 25px #e6bc00, 0 0 30px #d7e600;
+    }
+    to {
+        text-shadow: 0 0 0px #fff, 0 0 8px #ffde4d, 0 0 16px #ffb24d, 0 0 24px #ffb24d, 0 0 32px #ff9d4d, 0 0 40px #ffac4d, 0 0 48px #ff7f4d;
+    }
+}
+
+h1 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 102px !important;
+}
+
+h2 {
+    font-family: 'Parisienne', cursive;
+    color: black;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+.second-section {
+    background-image: url('images/second.jpg');
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 600px;
+}
+
+.second-section h3 {
+    font-size: 80px;
+    padding: 1rem 0;
+    font-family: 'Playball', cursive;
+    color: white;
+}
+
+.second-images {
+    margin: 1rem 2rem;
+    box-shadow: 2px 2px 20px white;
+}
+
+.second-images:hover {
+    margin: 1rem 2rem;
+    box-shadow: 2px 2px 20px rgb(128, 216, 116);
+    width: 580px;
+    color: rgb(47, 179, 255);
+}
+
+.second-section h4 {
+    color: rgb(240, 175, 240);
+    font-family: 'Viga', sans-serif;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+.third-section {
+    background-image: url('images/third.jpg');
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 100%;
+    padding-bottom: 40px;
+}
+
+.third-section h3 {
+    padding: 2rem 0;
+    font-size: 4rem;
+    font-family: 'Playball', cursive;
+}
+
+.third-images {
+    margin: 0 20px;
+}
+
+.third-images:hover {
+    height: 305px;
+}
+
+.carousel {
+    height: 355px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
 
 .card:hover {
-    box-shadow: 0 0 20px rgb(19, 19, 19);
+    box-shadow: 0 0 20px rgb(194, 226, 53);
 }
 
-.deck {
-    margin: 4.5rem auto;
-}
+
+/* --------------------------------------------------------------------------------------------------------- */
 
 
 /* Contact Section */
 
-#contact {
-    background-color: #9c9692;
+#contact h2 {
     text-align: center;
-    padding-top: 3rem;
-    color: black;
-}
-
-#contacts {
-    background-color: #9c9692;
+    padding: 2rem 0;
+    color: white;
+    font-size: 4rem;
 }
 
 .rahul {
-    width: 28%;
     margin: 1rem auto;
 }
 
 .vaibhavi {
-    width: 35%;
     margin: 1rem auto;
 }
 
 .divya {
     margin: 1rem auto;
-    width: 51%;
+}
+
+.links {
+    background-color: rgba(0, 0, 0, 0.493);
+    color: white;
+}
+
+.links .fa {
+    color: white;
+    width: 10px;
+}
+
+#contact h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Karanji */
+
+.karanji {
+    margin: 0;
+    text-align: center;
+    background-color: teal;
+    /* background: url('images/karanji-main.png') repeat-x center top; */
+    height: 100vh;
+    opacity: 0.7;
+}
+
+.heading {
+    color: rgb(1, 19, 19);
+}
+
+.info {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 1.5rem;
 }
 
 

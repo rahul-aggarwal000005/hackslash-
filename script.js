@@ -18,17 +18,20 @@ app.get("/", function(req, res) {
     res.sendFile(__dirname + "/index.html")
 });
 
-app.get("/signup", function(req, res) {
-    res.render('signup.ejs');
+app.get('/home', function(req, res) {
+    res.render('main.ejs');
 });
-
-app.get("/login", function(req, res) {
-    res.render('login.ejs');
-});
-
 
 app.get("/main", function(req, res) {
     res.render('main.ejs');
+});
+
+app.get("/karanji", function(req, res) {
+    res.render('karanji.ejs');
+});
+
+app.get("/palace", function(req, res) {
+    res.render('palace.ejs');
 });
 
 

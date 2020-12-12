@@ -11,6 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Mysore Site</title>
@@ -18,163 +23,149 @@
 
 <body>
     <div id="mainscreen">
-
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a href="#" class="navbar-brand">Brand Name</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle btn-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Profile
-                        </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="signup">New User</a>
-                                <a class="dropdown-item" href="login">Login</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="">Journal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-
-        <!-- Body Part of the first Page -->
-
-        <!-- One card Deck  -->
-        <div class="container content deck">
-            <img src="images/top.jpg" alt="" class="card-img-top first">
-        </div>
-
-        <!-- Two Card Deck -->
-        <div class="container deck">
-            <div class="card-deck">
-                <div class="card">
-                    <a href="#" class="card-link">
-                        <img class="card-img-top" src="images/stories.png" alt="stories">
-                        <h4 class="content card-title">Karanji Lake</h4>
-                    </a>
+        <!-- First Section -->
+        <div class="containter-fluid first-section">
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a href="#" class="navbar-brand">Hackslash</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">Journal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.google.com/maps/place/Mysuru">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
 
-                <div class="card">
-                    <a href="" class="card-link">
-                        <img class="card-img-top" src="images/christmas.png" alt="" class="img-fluid">
-                        <h4 class="content card-title">Mysore Palace</h4>
-                    </a>
-                </div>
+            <!-- first box -->
+            <div class="center-topic">
+                <h1 class="glow">Mysore</h1>
+                <h2 class="glow">City Of Palaces</h2>
             </div>
         </div>
 
-        <!-- <hr> -->
-
-        <!-- Three Card Deck -->
-        <div class="container deck">
-            <div class="card-deck">
-                <div class="card">
-                    <a href="#" class="card-link">
-                        <img src="images/1.png" class="card-img-top" alt="">
-                        <h5 class="card-title content">Brindavan Gardens</h5>
+        <!-- Second Section -->
+        <div class="container-fluid second-section">
+            <!-- Two Card Deck -->
+            <h3>Awaken To A Different World</h3>
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="karanji" class="card-link">
+                        <img class="second-images" src="images/karanji.png" alt="Karanji Lake">
+                        <h4 class="subheading">Karanji Lake</h4>
                     </a>
                 </div>
-                <div class="card">
-                    <a href="#" class="card-link">
-                        <img src="images/2.png" class="card-img-top" alt="">
-                        <h5 class="card-title content">St. Philomena Church</h5>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#" class="card-link">
-                        <img src="images/3.png" class="card-img-top" alt="">
-                        <h5 class="card-title content">Lalitha Mahal</h5>
+                <div class="col-lg-6">
+                    <a href="palace" class="card-link ">
+                        <img class="second-images" src="images/palace.png " alt="Mysore Palace">
+                        <h4 class="subheading">Mysore Palace</h4>
                     </a>
                 </div>
             </div>
+
         </div>
 
-        <!-- <hr> -->
+        <!-- Third Section -->
+        <div class="container-fluid third-section">
+            <!-- Three Card Deck -->
+            <h3> Commit to travel</h3>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-        <!-- Three Card Deck -->
-        <div class="container deck">
-            <div class="card-deck">
-                <div class="card">
-                    <a href="#" class="card-link">
-                        <img src="images/4.jpeg" class="card-img-top" alt="">
-                        <h5 class="card-title content">Railway Museum</h5>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#" class="card-link">
-                        <img src="images/5.png" class="card-img-top" alt="">
-                        <h5 class="card-title content">Somnathpur</h5>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#" class="card-link">
-                        <img src="images/6.png" class="card-img-top" alt="">
-                        <h5 class="card-title content">Shivanasamudra Falls</h5>
-                    </a>
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="">
+                            <img src="images/1.png" alt="Los Angeles" class="third-images">
+                        </a>
+                        <a href="">
+                            <img src="images/2.png" alt="Chicago" class="third-images">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="">
+                            <img src="images/3.png" alt="New York" class="third-images">
+                        </a>
+                        <a href="">
+                            <img src="images/4.jpeg" alt="Los Angeles" class="third-images">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="">
+                            <img src="images/5.png" alt="Chicago" class="third-images">
+                        </a>
+                        <a href="">
+                            <img src="images/6.png" alt="New York" class="third-images">
+                        </a>
+                    </div>
                 </div>
 
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
             </div>
-        </div>
-        <div id="contact">
-            <h2>Contact Us</h2>
-            <div class="container deck">
-                <div class="card-deck" id="contacts">
-                    <div class="card">
-                        <img src="images/vaibhavi.JPG" class="card-img-top vaibhavi" alt="">
-                        <h5 class="card-title content">Vaibhavi Jha</h5>
-                        <div class="container">
-                            <a href="https://www.facebook.com/profile.php?id=100007359661877" class="card-link">facebook</a>
-                            <a href="https://www.instagram.com/jha.vaibhavi/">Instagram</a>
-                            <p>Phone number : +91 85270 92466 </p>
+            <div id="contact">
+                <h4>Contact Us</h4>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="images/vaibhavi.JPG " class="vaibhavi " alt=" ">
+                        <h5 class="card-title content ">Vaibhavi Jha</h5>
+                        <div class="container links">
+                            <a href="https://www.linkedin.com/in/vaibhavi-jha-091212200/" class="fa fa-linkedin"></a>
+
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="images/rahul.JPG" class="card-img-top rahul" alt="">
-                        <h5 class="card-title content">Rahul Aggarwal</h5>
-                        <div class="container">
-                            <a href="https://www.facebook.com/profile.php?id=100007359661877" class="card-link">facebook</a>
-                            <a href="https://www.instagram.com/jha.vaibhavi/">Instagram</a>
-                            <p>Phone number : +91 9818576300</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/divya.JPG" class="card-img-top divya" alt="">
-                        <h5 class="card-title content">Divya</h5>
-                        <div class="container">
-                            <a href="https://www.facebook.com/profile.php?id=100007359661877" class="card-link">facebook</a>
-                            <a href="https://www.instagram.com/jha.vaibhavi/">Instagram</a>
-                            <p>Phone number : +91 80763 26108</p>
-                        </div>
-                    </div>
+                    <div class="col-lg-4 ">
+                        <img src="images/rahul.JPG " class="rahul" alt="rahul">
+                        <h5 class="card-title content ">Rahul Aggarwal</h5>
+                        <div class="container links">
+                            <a href="https://www.linkedin.com/in/rahul-a-146561107/" class="fa fa-linkedin"></a>
 
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="images/divya.JPG " class="divya " alt=" ">
+                        <h5 class="content">Divya</h5>
+                        <div class="container links">
+                            <a href="https://www.linkedin.com/in/dkdivya25/" class="fa fa-linkedin"></a>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <footer>
-                <div class="footer-copyright text-center py-3 footer-primary">© 2020 Copyright: Hackslash </div>
-            </footer>
+
         </div>
+        <footer>
+            <div class="footer-copyright text-center py-3 footer-primary ">© 2020 Copyright: Hackslash </div>
+        </footer>
+    </div>
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW " crossorigin="anonymous "></script>
+    <script src="script.js "></script>
 </body>
 
 
