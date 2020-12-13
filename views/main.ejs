@@ -8,104 +8,222 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Mysore</title>
+    <title>Mysore Site</title>
 </head>
 
 <body>
+    <div id="mainscreen">
+        <!-- First Section -->
+        <div class="containter-fluid first-section home-first-section">
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class=" nav-item active ">
+                            <a class="nav-link " href="home ">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="land">Journal</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#contact ">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-primary ">
-        <div class="search">
-            <form action="/search" method="POST" class="searchBox">
-                <input type="text" placeholder="Search...">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
+            <!-- first box -->
+            <div class="center-topic home-center-topic">
+                <h1 class="glow ">Mysore</h1>
+                <h2 class="glow ">City Of Palaces</h2>
+            </div>
+            <h3>Discover a different world…</h3>
+            <div class="facilities">
+                <h5>Please Give Us Feedback by click the Feedback Link</h5>
+                <ul>
+                    <li>
+                        <a href="#hotel"> Hotel Booking</a></li>
+                    <li>
+                        <a href="#hotel">Travel Booking</a>
+                    </li>
+                    <li>
+                        <a href="#review">Reviews </a>
+                    </li>
+                    <li>
+                        <a href="#feedback">Feedback</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="map">
-            <a href="https://www.google.com/maps/place/Mysuru">
-                <i class="fa fa-globe fa-lg" aria-hidden="true"></i>
-            </a>
+
+        <!-- Hotel and Travelling Section -->
+        <div class="container-fluid second-section " id="hotel">
+            <!-- Two Card Deck -->
+            <div class="row">
+                <div class="col-lg-6 hotel">
+                    <h3>Hotel Booking Section</h3>
+                    <div class="row hotel-images">
+                        <a href="https://www.agoda.com/en-in/?site_id=1829958&tag=1d8ff09d-fd68-a52b-fadc-8b9f660ac0e4&device=c&network=g&adid=464803121696&rand=5822464863207081946&expid=&adpos=&gclid=Cj0KCQiA8dH-BRD_ARIsAC24umasmYK9rwlG9DS37ZADHPje1mikMCBTyrwA_HFxrfUn33CaolJ8ToQaAqMFEALw_wcB&checkin=2020-12-20&checkout=2020-12-21&adults=1&childs=0&rooms=1&los=1">
+                            <img src="images/agoda.png" alt="agoda">
+                        </a>
+                    </div>
+                    <div class="row hotel-images">
+                        <a href="https://www.trivago.in/?aDateRange%5Barr%5D=2020-12-18&aDateRange%5Bdep%5D=2020-12-19&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&aRooms%5B0%5D%5Badults%5D=2&cpt2=74383%2F200&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=&overlayMode=">
+                            <img src="images/trivago.png" alt="trivago">
+                        </a>
+                    </div>
+                    <div class="row hotel-images">
+                        <a href="https://www.makemytrip.com/hotels/hotel-listing/?checkin=12132020&city=CTXMY&checkout=12142020&roomStayQualifier=2e0e&locusId=CTXMY&country=IN&locusType=city&searchText=Mysore,%20Karnataka,%20India&visitorId=4a7a0ab3-69bc-4eaf-92f6-e77e75b73805">
+                            <img src="images/makemytrip.png" alt="makemytrip">
+                        </a>
+                    </div>
+                    <div class="row hotel-images">
+                        <a href="https://www.makemytrip.com/hotels/hotel-listing/?checkin=12132020&city=CTXMY&checkout=12142020&roomStayQualifier=2e0e&locusId=CTXMY&country=IN&locusType=city&searchText=Mysore,%20Karnataka,%20India&visitorId=4a7a0ab3-69bc-4eaf-92f6-e77e75b73805">
+                            <img src="images/booking.png" alt="makemytrip">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 travel">
+                    <h3>Travel Booking Section</h3>
+                    <div class="row travel-images">
+                        <a href="https://www.yatra.com/cabs">
+                            <img src="images/yatra.png" alt="agoda">
+                        </a>
+                    </div>
+                    <div class="row travel-images">
+                        <a href="https://www.goibibo.com/cars/">
+                            <img src="images/goibibo.png" alt="goibibo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#homeContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="homeContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Facilities
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">New Services</a>
-                            <a class="dropdown-item" href="#">Feedback</a>
-                            <a class="dropdown-item" href="#">Booking</a>
-                            <a class="dropdown-item" href="#">Ask for Guide</a>
-                            <a class="dropdown-item" href="#">Places To Visit</a>
-                            <a class="dropdown-item" href="#">Restaurant Near You</a>
+
+        <!-- Review Section -->
+        <div class="container-fluid second-section " id="review">
+            <!-- Two Card Deck -->
+            <h3>Reviews Section</h3>
+            <div class="row review">
+                <div class="card-deck">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rahul Aggarwal</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="">Journal</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-user-circle fa-lg" aria-hidden="true"></i></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Megha</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
-    <div class="container middle">
-        <div class="row">
-            <div class="col-lg-3 leftBox">
-                <div class="container addbooking">
-                    <h5>Hotel Booking</h5>
-                    <div> <a href="#">First Site</a></div>
-                    <div> <a href="#">Second Site</a></div>
-                    <div> <a href="#">Third Site</a></div>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Vaibhavi</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Divya</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="container  addTransport">
-                    <h5>Transport Booking</h5>
-                    <div> <a href="#">First Booking</a></div>
-                    <div> <a href="#">Second Booking</a></div>
-                    <div> <a href="#">Third Booking</a></div>
-                </div>
-
             </div>
-            <div class="col-lg-6 middleBox">
-                <div class="row postsection">
-                    <form action="/addpost" method="POST">
-                        <textarea name="Add Post" id="addpost" cols="80" rows="5"> Add your Post </textarea>
-                        <button type="submit" class="btn btn-primary">Add Post</button>
+            <div class="row review">
+                <div class="card-deck">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Anisha</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Shivani</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Yogesh</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Kaushal</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Feedback -->
+        <div class="container-fluid second-section feedback-section" id="feedback">
+            <!-- Two Card Deck -->
+            <h3>Feedback Section</h3>
+            <div class="row feedback ">
+                <div class="col-lg-6 feedback-form ">
+                    <form action="/feedback " method="POST">
+                        <div class="form-group ">
+                            <h5>Your Name</h5>
+                            <input type="text " class="form-control " name="userName " placeholder="Type Here ">
+                        </div>
+                        <div class="form-group ">
+                            <h5>Email address</h5>
+                            <input type="email " name="userEmail " class="form-control " id="email " placeholder="Enter email ">
+                            <small class="form-text text-muted ">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group ">
+                            <h5>Your Feedback</h5>
+                            <textarea name="feedback " onfocus="this.value='' ; " onblur="if (this.value=='' ) {this.value='Type here' ;} " required=" " cols="40 " rows="5 ">Type here</textarea>
+                        </div>
+                        <button type="submit " class="btn btn-primary ">Submit Feedback</button>
                     </form>
                 </div>
-                <div class="row postleft">
-                    <img src="images/1.jpg" alt="" class="leftfloat">
+                <div class="col-lg-6 feedback-icon ">
+                    <img src="images/feedback.png " alt="feedback ">
                 </div>
-                <div class="row postright">
-                    <img src="images/2.jpeg" alt="" class=>
-                </div>
-
-
-
             </div>
-            <div class="col-lg-3 rightBox">Right</div>
+            <% if(success!=''){ %>
+                <div class="alert alert-success">
+                    <strong>
+                        <%= success %>!!!
+                    </strong>
+                </div>
+                <% } %>
+
         </div>
+
+        <footer>
+            <div class="footer-copyright text-center py-3 footer-primary ">© 2020 Copyright: Hackslash </div>
+        </footer>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "></script>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW " crossorigin="anonymous "></script>
     <script src="script.js "></script>
 </body>
 
-<footer>
-
-</footer>
 
 </html>

@@ -60,6 +60,11 @@ hr {
     margin-top: 7px;
 }
 
+.fa-map-marker {
+    margin: 1rem 0;
+    font-size: 22px;
+}
+
 
 /* Body Content */
 
@@ -215,20 +220,28 @@ h2 {
 
 .karanji {
     margin: 0;
-    text-align: center;
-    background-color: teal;
+    justify-content: center;
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
     /* background: url('images/karanji-main.png') repeat-x center top; */
-    height: 100vh;
-    opacity: 0.7;
+    height: 300vh;
+}
+
+.info-first {
+    justify-content: center;
+    padding: 2rem 0;
 }
 
 .heading {
-    color: rgb(1, 19, 19);
+    color: rgb(0, 0, 17);
+    padding: 2rem;
+    text-align: center;
+    text-shadow: 5px 5px 20px rgba(23, 45, 168, 0.767);
 }
 
-.info {
+.info-second {
     background-color: rgba(0, 0, 0, 0.2);
-    color: white;
+    color: black;
     font-size: 1.5rem;
 }
 
@@ -242,161 +255,100 @@ footer {
 }
 
 
-/* SignUp Page */
-
-.signing {
-    background-color: lightgrey;
-    padding-top: 15vh;
-}
-
-.sign-up {
-    width: 50%;
-    text-align: center;
-}
-
-.md-form {
-    background-color: white;
-    padding: 0.5rem 3rem;
-}
-
-#logo {
-    width: 80%;
-}
-
-.md-form p {
-    font-size: small;
-}
-
-.md-form input {
-    background-color: white;
-    border: none;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.493);
-    border-radius: 0;
-    outline: none;
-    margin: 1rem 0;
-}
-
-.md-form input:focus {
-    border: none;
-    box-shadow: none;
-    outline: none;
-    background-color: white;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.493);
-}
-
-.suform {
-    background-color: white;
-}
-
-.signupheader {
-    background-color: rgb(47, 179, 255);
-    padding: 2rem;
-    margin: 2rem 0;
-}
-
-.links,
-.tnc {
-    margin: 1rem 0;
-}
-
-.fab,
-.fas {
-    margin: 1rem;
-}
-
-.sbutton {
-    margin-bottom: 3rem;
-}
-
-.lbutton {
-    margin: 2rem 0;
-}
-
-
 /* Home Screen Of User */
 
-.search {
-    margin: 0 2vw;
+.home-first-section {
+    background-image: url('images/main.jpg');
 }
 
-.searchBox input {
-    padding: 0 0.5rem;
+.home-center-topic {
+    float: left;
+    padding: 0 1rem;
 }
 
-.map {
-    text-align: center;
+.home-center-topic h1 {
+    font-size: 70px !important;
 }
 
-.middle {
-    background-color: rgb(200, 169, 200);
-    margin: 12vh auto;
-    height: 100vh;
+.home-center-topic h2 {
+    font-size: 60px;
+    display: inline-block;
 }
 
-.leftBox {
-    padding: 3vh;
-    background-color: rgb(241, 241, 204);
-    height: 100%;
-    border-right: 10px solid black;
-    text-align: center;
+.facilities {
+    background-color: rgba(168, 63, 63, 0.4);
+    margin: 42px 11rem 0 46rem;
+    padding: 1rem 1rem;
+    box-shadow: lightgoldenrodyellow;
+    border-radius: 30px;
 }
 
-.middleBox {
-    padding: 3vh;
-    background-color: rgb(176, 230, 176);
-    height: 100%;
-    text-align: center;
+.facilities ul {
+    list-style: none;
+    text-align: left;
+    font-size: 2rem;
 }
 
-.rightBox {
-    padding: 3vh;
-    background-color: rgb(245, 176, 187);
-    height: 100%;
-    border-left: 10px solid black;
-}
-
-.addbooking {
-    background-color: teal;
+ul a {
     color: white;
-    margin: 5% auto;
+}
+
+ul a:hover {
+    color: yellowgreen;
+}
+
+.hotel-images,
+.travel-images {
     justify-content: center;
-    padding: 8vh 0;
 }
 
-.addTransport {
-    background-color: purple;
-    color: white;
-    margin: 5% auto;
+.hotel,
+.travel {
+    border: 5px dashed brown;
+}
+
+.hotel-images img,
+.travel-images img {
+    width: 10rem;
+    margin: 2rem;
+}
+
+.hotel h3,
+.travel h3 {
+    font-size: 3rem;
+}
+
+.review {
     justify-content: center;
-    padding: 8vh 0;
+    margin: 2rem 0;
 }
 
-.postsection {
-    margin: auto auto 2rem auto;
-    width: 100%;
+.review .card {
+    background-color: brown;
+}
+
+.feedback {
     justify-content: center;
-    border: 2px solid black;
 }
 
-.postleft,
-.postright {
-    display: block;
+#feedback h3 {
+    font-size: 3rem;
 }
 
-.postleft img {
-    width: 50%;
-    float: right;
+.feedback-form {
+    padding: 0 9rem;
+    justify-content: center;
 }
 
-.postright img {
-    width: 50%;
-    float: right;
-}
-
-#addpost {
+.feedback-form form {
+    padding: 2rem;
+    background-color: #C19A6B;
     border-radius: 10px;
-    padding: 0 10px;
-    width: 100%;
+    border: 5px solid brown;
+}
+
+.feedback-section {
+    height: 112vh;
 }
 
 
