@@ -297,6 +297,10 @@ ul a:hover {
     color: yellowgreen;
 }
 
+.middle {
+    background-color: maroon;
+}
+
 .hotel-images,
 .travel-images {
     justify-content: center;
@@ -304,7 +308,7 @@ ul a:hover {
 
 .hotel,
 .travel {
-    border: 5px dashed brown;
+    border-right: 3px solid brown;
 }
 
 .hotel-images img,
@@ -316,6 +320,21 @@ ul a:hover {
 .hotel h3,
 .travel h3 {
     font-size: 3rem;
+    font-family: 'Parisienne', cursive;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#review h5,
+p {
+    color: whitesmoke;
+    text-align: center;
+}
+
+#review h3 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 2rem;
+    margin-top: 10px;
 }
 
 .review {

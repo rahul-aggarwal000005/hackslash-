@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 let successMessage = ''
 
 
-mongoose.connect("mongodb://localhost:27017/FeedbackDB", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://hackslash:hackslash@cluster0.ykpkp.mongodb.net/FeedbackDB", { useNewUrlParser: true });
 
 const feedbackSchema = {
     name: String,
@@ -69,51 +69,54 @@ app.get("/palace", function(req, res) {
     res.render('palace.ejs');
 });
 
+app.get("/environment", function(req, res) {
+    res.render('environment.ejs');
+});
+
+
+app.get("/transport", function(req, res) {
+    res.render('transport.ejs');
+});
+
+app.get("/culture", function(req, res) {
+    res.render('culture.ejs');
+});
+
+app.get("/culture", function(req, res) {
+    res.render('culture.ejs');
+});
+
+app.get("/temple", function(req, res) {
+    res.render('temple.ejs');
+});
+
+app.get("/jagmohar", function(req, res) {
+    res.render('jagmohar.ejs');
+});
+
+app.get("/church", function(req, res) {
+    res.render('church.ejs');
+});
+
 app.get('/feedback', function(req, res) {
-
-
-    Feedback.find({}, function(err, foundFeedback) {
-        if (foundFeedback.length === 0) {
-            Feedback.insertMany(defaultFeedbacks, function(err) {
-                if (err) {
-                    console.log(err);
-                } else {
-                    console.log("Successfully Added");
-                }
-            });
-            res.redirect('/feedback');
-        } else {
-            console.log("loggest your entry");
-            res.render('main', { success: successMessage });
-        }
-    });
+    res.render('main', { success: successMessage });
 });
 
 /* Post Request */
 
 app.post('/feedback', function(req, res) {
-    const useremail = req.body.userEmail;
-    const username = req.body.userName;
-    const userfeedback = req.body.feedback;
-    if (useremail == '' || username == '' || userfeedback == '') {
-        success = '';
-    } else {
+    console.log(req.body);
+    const feedbackItem = new Feedback({
+        name: req.body.Name,
+        email: req.body.Email,
+        feedback: req.body.Feedback
+    });
+    feedbackItem.save();
+    console.log(feedbackItem);
+    successMessage = 'Thankyou for the feedback';
+    res.redirect('/home');
 
-        const feedbackItem = new Feedback({
-            name: username,
-            email: useremail,
-            feedback: userfeedback
-        });
-        feedbackItem.save();
-        console.log("Your data is saved");
-        successMessage = 'Thankyou for the feedback';
-        res.redirect('/home');
-    }
 });
-
-
-
-
 
 
 app.listen(port, function() {
